@@ -1,10 +1,22 @@
 ---
 title: Map State to Props
 ---
-## Map State to Props
+# Map State to Props
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/front-end-libraries/react-and-redux/map-state-to-props/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
+## Problem
 
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
+This problem asks us to write a function that takes a state as a parameter and returns an object that maps that state to the messages property. This can be accomplished with a single function using arrow notation.
 
-<!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
+````javascript
+const function = (param) => {
+  return {property: param};
+};
+````
+
+## Solution
+
+````javascript
+const mapStateToProps = (state) => {
+    return {messages: state};
+};
+````
